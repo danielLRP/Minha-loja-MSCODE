@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Loja</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
         <header>
             
             <h1>Minha loja!</h1>
-            <div>
-                <nav>
+            <div class="navegation">
+                <nav class="navegation1">
                     <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#categotias">Categorias</a></li>
-                        <li><a href="#contatos">Contatos</a></li>
+                        <a href="#inicio">Início</a>
+                        <a href="#produtos">Produtos</a>
+                        <a href="#categotias">Categorias</a>
+                        <a href="#contatos">Contatos</a>
                     </ul>
                 </nav>
                 
-                <div>
+                <div class="navegation">
                     <label for="buscar">Buscar:</label>
                 <input type="text" id="busca" name="busca" required>
                 <input type="submit" id="buscar" name="buscar">
@@ -32,10 +33,10 @@
     </div>
     <div>
         <main>
-            <h1>Bem-vindo à nossa loja!</h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNOK6Ivq3pu7pPSyOTE6w4AOqUtoZU4O4gg&s" alt="Imagem da nossa loja" width="600" height="300">
-
-            <div>
+            <h1 class="bem-vindo">Bem-vindo à nossa loja!</h1>
+            <div class="imagem-loja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNOK6Ivq3pu7pPSyOTE6w4AOqUtoZU4O4gg&s" alt="Imagem da nossa loja" width="600" height="300"></div>
+<br><hr>
+            <div class="produtos">
                 <h1>Categorias</h1>
                 <ul>
                     <li>Roupas</li>
@@ -43,8 +44,10 @@
                     <li>Livros</li>
                     <li>Acessórios</li>
                 </ul>
+                <br>
+                <hr>
             </div>
-            <div>
+            <div class="table">
                 <h1>Nossos produtos</h1>
                 <table border="1">
                     <tr>
@@ -69,6 +72,7 @@
                         <td><img src="https://www.sbb.com.br/media/catalog/product/cache/92d68943962674114ecb1e4e3d445037/7/8/7899938425800_ntlh63el_letra_grande_edi_o_liter_ria_preta_01.jpg" alt="Foto do livro" width="200px" height="100px"></td>
                     </tr>
                 </table>
+                <br>
             </div>
             <hr>
             <div>
@@ -97,23 +101,30 @@
                         <br>
 
                         <div>
-                            <label for="mensage">Mensagem:</label>
-                            <textarea id="mensage" name="mensage">
+                            <label for="mensage">Mensagem:</label> <br>
+                            <textarea name="mensage" id="mensage"></textarea>
                             <br>
                         </div>
                         <br>
                         <input type="submit" id="enviar" name="enviar">
                     </form>
                 </section>
+                <br>
             </div>
+            <hr>
+            <br>
             <div>
                 <footer>
                     <h1>Redes sociais</h1>
-                    <ul>
-                        <li><a href="#instagram">Instagram</a></li>
-                        <li><a href="#x">X</a></li>
-                        <li><a href="#linkedin">Linkedin</a></li>
-                    </ul>
+                        <div class="redes-sociais">
+                            <nav class="redes-sociais1">
+                                <ul>
+                                    <a href="#instagram">Instagram</a>
+                                    <a href="#x">X</a>
+                                    <a href="#linkedin">Linkedin</a>
+                                </ul>
+                            </nav>
+                        </div>
                     <p>2025 Minha loja. Todos os direitos reservados</p>
                 </footer>
             </div>
